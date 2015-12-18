@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+    Yan Arlex Vallejo - frontend -- @yavallejo
+    Renzo Muñoz - Diseñador -- @Indigo2100
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3 (Stylus - Nib), HTML5 (Jade)
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

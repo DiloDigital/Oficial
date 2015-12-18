@@ -1,0 +1,341 @@
+html
+  color primary--text
+  font-size 1em
+  line-height 1.4
+  font-family roboto-regular-webfont
+  background-color bg-color
+
+::-moz-selection
+  background primary_color
+  text-shadow none
+  color color-text-icon
+
+::selection
+  background primary_color
+  text-shadow none
+  color color-text-icon
+
+hr
+  display block
+  height 1px
+  border 0
+  border-top 1px solid #ccc
+  margin 1em 0
+  padding 0
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+
+fieldset
+  border 0
+  margin 0
+  padding 0
+
+textarea
+  resize vertical
+
+.browserupgrade
+  margin 0.2em 0
+  background primary_color--dark
+  color color-text-icon
+  padding 0.2em 0
+
+.header
+  background-color primary_color--light
+  &__bottom
+    text-align center
+.header
+  background-color primary--text
+  position relative
+  overflow hidden
+  z-index 2
+  &::before
+    content ""
+    background-image url("img/bg_main_alt.jpg")
+    background-size cover
+    background-position center center
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    opacity 0.3
+    z-index -1
+
+
+
+
+.hidden
+  display none !important
+
+.logo
+  center-block(150px)
+  border-radius 50%
+  overflow hidden
+
+@media screen and (min-width:b2)
+
+  .logo
+    margin 0.1em 0 0 1em
+    float left
+    width 125px
+
+@media screen and (min-width:b4)
+
+  .logo
+    margin-top 0.2em
+
+.projects
+  &__list
+    li
+      display-inline-block()
+      margin 0.5em 0
+
+
+
+
+
+.share
+  ul
+    li
+      display-inline-block()
+      a
+        margin 0.2em
+        font-size: 1.4em
+        color color-text-icon
+        text-decoration none
+        transition all .3s ease-in
+        &:hover
+          color accent_color
+
+.visuallyhidden
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+  clip auto
+  height auto
+  margin 0
+  overflow visible
+  position static
+  width auto
+
+.invisible
+  visibility hidden
+
+.clearfix:before,
+.clearfix:after
+  content " "
+  display table
+
+.clearfix
+  &:after
+    clear both
+
+.title
+  margin 0.1em
+  font-family stripefun-webfont
+  color color-text-icon
+  font-weight normal
+  &--main
+    font-size 2.1em
+  &--secundary
+    font-family roboto-regular-webfont
+    font-size: 1.5em
+  &:hover
+    color accent_color
+
+@media screen and (min-width:b1)
+
+  .title
+    margin 0
+    &--main
+      font-size 2.5em
+      font-weight: bold
+    &--secundary
+      font-size 2em
+
+@media screen and (min-width:b2)
+
+  .title
+
+    &--main
+      font-size 4em
+
+
+
+.nav
+  &__main
+    position relative
+    &-toggle
+      background-color primary_color--dark
+      border 0
+      color color-text-icon
+      cursor pointer
+      font-size 1em
+      height 40px
+      padding 10px
+      position absolute
+      right 5px
+      top -70px
+      width 40px
+      &--bar
+        background color-text-icon
+        display block
+        height 2px
+        transition 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55)
+        width 20px
+        & + .nav__main-toggle--bar
+            margin-top 4px
+      &--active
+          .nav__main-toggle--bar
+              margin 0
+              position absolute
+              &:nth-child(1)
+                  transform: rotate(45deg);
+              &:nth-child(2)
+                  opacity 0
+              &:nth-child(3)
+                  transform: rotate(-45deg);
+
+
+    &-list
+      background primary_color
+      display none
+      list-style none
+      margin 0 0 10px
+      padding 0
+      position relative
+      width 100%
+      li
+          border-bottom 1px solid accent_color
+          border-right 0
+          width 100%
+          &:last-child
+              border 0
+          &:first-child
+              a:after
+                  border 6px solid transparent
+                  border-bottom-color accent_color
+                  border-top 0
+                  content ''
+                  height 0
+                  position absolute
+                  right 1em
+                  top -6px
+                  width 0
+          a
+              color color-text-icon
+              display block
+              font-family font-family roboto-regular-webfont
+              font-size 1.3em
+              padding: 8px 0;
+              text-align center
+              text-decoration none
+              transition all .3s ease-in
+              width: 100%;
+              &:hover
+                  background-color accent_color
+
+
+
+
+
+
+      li.current-menu-item
+        a
+          background-color accent_color
+          border-color primary_color--light
+          color color-text-icon
+
+      &--open
+          display block !important
+          .header__bottom--navegation
+              &__child
+                  display block
+
+@media screen and (min-width:b2)
+
+  .nav
+    &__main
+      float right
+      width calc(100%-150px)
+      margin-top 1em
+      &-toggle
+        display none
+      &-list
+        background transparent
+        display block
+        li
+          border 0
+          display-inline-block()
+          width auto
+          overflow hidden
+          &:first-child
+              a:after
+                  display none
+          a
+            color color-text-icon
+            font-size 1.2em
+            border-bottom 1px solid color-text-icon
+            margin 0.5em 0.2em
+            display block
+            box-sizing border-box
+            width 100px
+            &:hover
+              border-bottom 1px solid accent_color
+
+
+
+
+// Animacion para el efecto del header
+
+
+
+
+.animacion-text{
+  &:after {
+    content: " ";
+    display: inline-block;
+    height: 47px;
+    position: relative;
+    top: 10px;
+    margin-left: 3px;
+    margin-right: 7px;
+    width: 4px;
+    background: #06a44d;
+    animation: blink 1s step-start 0s infinite;
+    -webkit-animation: blink 1s step-start 0s infinite;
+  }
+}
+
+.selectedText {
+  display: none;
+}
+
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
