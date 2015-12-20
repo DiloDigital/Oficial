@@ -1,8 +1,8 @@
 header.header
-    .header__top
+    .header__top.max-width
         .logo
             a(href="#")
-                img(src="img/logo.png",class="img-responsive", alt="Logo DiloDigital", width="313", height="90")
+                img(src="img/logo.png",class="img-responsive", alt="Logo DiloDigital", width="310", height="70")
         nav.nav.nav__main
                 button.nav__main-toggle
                     span.nav__main-toggle--bar
@@ -17,6 +17,17 @@ header.header
                         a(href="#") Servicios
                     li
                         a(href="#") Contacto
-    .header__bottom
+    .header__bottom.max-width
+        .bubble
+            .bubble__left
+                h2.title.title--main Tienes mucho que decir. ¡Dilo en el lugar correcto!
+                p
+                    | El mundo figital tiene mucho que ofrecer y estamos aqui para ayudarte a sacarle el maximo provecho. Contamos con <span>Soluciones digitales 360° ideales para tu negocio</span>
+            .bubble__right
+                a(href="#") Contactanos
+            .bubble__center
+                img(src="img/mascota_banner.png", class="img-responsive", alt="DiloDigital Contactanos", width="400", height="750")
+
+
 
 

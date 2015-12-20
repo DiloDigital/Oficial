@@ -1,2 +1,77 @@
-.section
-    | aja
+section.services
+    div.max-width
+        .services__image
+            img(src="img/mascota_servicios.png", class="img-responsive", alt="Servicios DiloDigital" , width="690" , height="880")
+
+        .services__information
+            h2.title.title--main
+                | ¿Qué hacemos?
+            p
+                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab recusandae, ad totam placeat, inventore dolores eaque! Praesentium quae iure, dolore, corporis tempore tempora at distinctio maiores aliquid assumenda voluptatum consectetur!
+            a(href="#") +
+section.offers.bg--gris-light
+    div.max-width
+        h2.title.title--main
+            | Ofertas Especiales
+        p
+            | Tenemos estos bonitos paquetes para ti, escoge el que más te guste desde un economico pero funcional PLATA hasta un completo y exclusivo ORO
+        each val in ["Bronce", "Oro", "Plata"]
+            .offers__item
+                h3.title.title--main=val
+                ul
+                    li Diseño Responsive
+                    li Optimización SEO
+                    li Portada One Page
+                    li 5 landing Page
+section.portfolio.bg--gris-medium
+    article.max-width
+        h2.title.title--main
+            | Nuestros Trabajos
+        p
+            | Nuestras recomendaciones estan en la calle, puedes preguntar quien es DiloDigital y ya te daran nuestras referencias , y si eso no basta mira nuestros ultimos trabajos
+        each val in ["img/emotion.png", "img/chas.png", "img/recoinsa.png", "img/negrita_films.png", "img/aprendiendoando.png", "img/razo_arquitectonico.png"]
+            portfolio__item
+                img(src=val, class="img-responsive", alt=val, width="328", height="288")
+    article.testimonials
+        each val in ["Testimonials Yan", "Testimonials Renzo"]
+            .testimonials__item
+                figure
+                    img(src="https://placeimg.com/200/200/animals",class="img-responsive", alt=val , width="200" , height="200")
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae reiciendis facere voluptate quaerat commodi molestias tempora provident enim assumenda doloribus doloremque magni dolor atque cupiditate tempore reprehenderit, dolores aliquam. Qui.
+section.contact
+    .max-width
+        .contact__image
+            img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
+        .contact__form
+            h2.title.title--main
+                | Queremos Saber de tí
+            p
+                | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
+            form(action="",method="POST")
+                .form__group
+                    label(for="nombre") Nombre
+                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                .form__group
+                    label(for="nombre") E-mail
+                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                .form__group
+                    label(for="nombre") Teléfono
+                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                .form__group
+                    label(for="nombre") Mensaje
+                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                .form__submit
+                    input(type="submit",value="Enviar")
+
+
+
+
+
+
+
+
+
+
+
+
