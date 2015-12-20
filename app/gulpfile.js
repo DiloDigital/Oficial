@@ -4,7 +4,6 @@ var gulp         = require('gulp'), // Gulp
     nib          = require('nib'),
     autoprefixer = require('autoprefixer-stylus'), // Autoprefixer
     imagemin     = require('gulp-imagemin'), // Imagemin
-    sourcemaps   = require('gulp-sourcemaps'), // Sourcemaps
     concat       = require('gulp-concat'), // Concat
     changed      = require('gulp-changed'), // Changed
     browsersync  = require('browser-sync'); // Browser-Sync
@@ -56,11 +55,7 @@ gulp.task('stylus', function(){
         ])
         .pipe(stylus({
             use: [nib(),autoprefixer()],
-            compress: true,
-            sourcemap: {
-                inline: true,
-                sourceRoot: dev_path.styl
-            }
+            compress: true
         }))
         .on('error', console.log)
         .pipe(gulp.dest(public_path.css))

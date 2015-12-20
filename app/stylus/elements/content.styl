@@ -1,25 +1,25 @@
 html
-  color primary--text
+  color primary_text
   font-size 1em
   line-height 1.4
-  font-family roboto-regular-webfont
-  background-color bg-color
+  font-family kaushanscript-regular-webfont
+  background-color azul
 
 ::-moz-selection
-  background primary_color
+  background azul
   text-shadow none
-  color color-text-icon
+  color blanco
 
 ::selection
-  background primary_color
+  background azul
   text-shadow none
-  color color-text-icon
+  color blanco
 
 hr
   display block
   height 1px
   border 0
-  border-top 1px solid #ccc
+  border-top 1px solid gris_dark
   margin 1em 0
   padding 0
 
@@ -42,76 +42,33 @@ textarea
 .browserupgrade
   margin 0.2em 0
   background primary_color--dark
-  color color-text-icon
+  color rojo
   padding 0.2em 0
 
-.header
-  background-color primary_color--light
-  &__bottom
-    text-align center
-.header
-  background-color primary--text
-  position relative
-  overflow hidden
-  z-index 2
-  &::before
-    content ""
-    background-image url("img/bg_main_alt.jpg")
-    background-size cover
-    background-position center center
-    position absolute
-    left 0
-    top 0
-    width 100%
-    height 100%
-    opacity 0.3
-    z-index -1
 
-
+.header
+ background-color gris_light
 
 
 .hidden
-  display none !important
+  display none
 
 .logo
-  center-block(150px)
-  border-radius 50%
   overflow hidden
+  width 323px
 
 @media screen and (min-width:b2)
 
   .logo
     margin 0.1em 0 0 1em
     float left
-    width 125px
 
 @media screen and (min-width:b4)
 
   .logo
     margin-top 0.2em
 
-.projects
-  &__list
-    li
-      display-inline-block()
-      margin 0.5em 0
 
-
-
-
-
-.share
-  ul
-    li
-      display-inline-block()
-      a
-        margin 0.2em
-        font-size: 1.4em
-        color color-text-icon
-        text-decoration none
-        transition all .3s ease-in
-        &:hover
-          color accent_color
 
 .visuallyhidden
   border 0
@@ -135,70 +92,30 @@ textarea
 .invisible
   visibility hidden
 
-.clearfix:before,
-.clearfix:after
-  content " "
-  display table
-
-.clearfix
-  &:after
-    clear both
-
-.title
-  margin 0.1em
-  font-family stripefun-webfont
-  color color-text-icon
-  font-weight normal
-  &--main
-    font-size 2.1em
-  &--secundary
-    font-family roboto-regular-webfont
-    font-size: 1.5em
-  &:hover
-    color accent_color
-
-@media screen and (min-width:b1)
-
-  .title
-    margin 0
-    &--main
-      font-size 2.5em
-      font-weight: bold
-    &--secundary
-      font-size 2em
-
-@media screen and (min-width:b2)
-
-  .title
-
-    &--main
-      font-size 4em
-
-
 
 .nav
   &__main
     position relative
     &-toggle
-      background-color primary_color--dark
+      background-color gris_light
       border 0
-      color color-text-icon
+      color gris_dark
       cursor pointer
       font-size 1em
       height 40px
       padding 10px
       position absolute
-      right 5px
+      right 15px
       top -70px
-      width 40px
+      width 60px
       &--bar
-        background color-text-icon
+        background gris_dark
         display block
         height 2px
         transition 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55)
-        width 20px
+        width 98%
         & + .nav__main-toggle--bar
-            margin-top 4px
+            margin-top 7px
       &--active
           .nav__main-toggle--bar
               margin 0
@@ -212,7 +129,7 @@ textarea
 
 
     &-list
-      background primary_color
+      background rojo
       display none
       list-style none
       margin 0 0 10px
@@ -220,7 +137,7 @@ textarea
       position relative
       width 100%
       li
-          border-bottom 1px solid accent_color
+          border-bottom 1px solid amarillo
           border-right 0
           width 100%
           &:last-child
@@ -228,7 +145,7 @@ textarea
           &:first-child
               a:after
                   border 6px solid transparent
-                  border-bottom-color accent_color
+                  border-bottom-color blanco
                   border-top 0
                   content ''
                   height 0
@@ -237,9 +154,9 @@ textarea
                   top -6px
                   width 0
           a
-              color color-text-icon
+              color primary_text
               display block
-              font-family font-family roboto-regular-webfont
+              font-family kaushanscript-regular-webfont
               font-size 1.3em
               padding: 8px 0;
               text-align center
@@ -247,7 +164,7 @@ textarea
               transition all .3s ease-in
               width: 100%;
               &:hover
-                  background-color accent_color
+                  background-color gris_light
 
 
 
@@ -256,9 +173,9 @@ textarea
 
       li.current-menu-item
         a
-          background-color accent_color
-          border-color primary_color--light
-          color color-text-icon
+          background-color amarillo
+          border-color gris_dark--light
+          color blanco
 
       &--open
           display block !important
@@ -298,44 +215,5 @@ textarea
               border-bottom 1px solid accent_color
 
 
-
-
-// Animacion para el efecto del header
-
-
-
-
-.animacion-text{
-  &:after {
-    content: " ";
-    display: inline-block;
-    height: 47px;
-    position: relative;
-    top: 10px;
-    margin-left: 3px;
-    margin-right: 7px;
-    width: 4px;
-    background: #06a44d;
-    animation: blink 1s step-start 0s infinite;
-    -webkit-animation: blink 1s step-start 0s infinite;
-  }
-}
-
-.selectedText {
-  display: none;
-}
-
-
-@keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
 
 
