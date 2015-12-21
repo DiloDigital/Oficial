@@ -7,7 +7,8 @@ section.services.text--center
                 |  Lorem ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. lorem ipsum ha sido el texto relleno estandar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galeria de textos y lkos mezclo de tal manera que logro hacer un libro de textos especimen. no solo sobrevivio 500 años
             a(href="#", class="btn btn--secundary") +
         .services__image
-            img(src="img/mascota_servicios.png", class="img-responsive", alt="Servicios DiloDigital" , width="690" , height="880")
+            figure.sin-margin
+                img(src="img/mascota_servicios.png", class="img-responsive", alt="Servicios DiloDigital" , width="690" , height="880")
 section.offers.bg--gris-light.text--center
     div.max-width
         h2.title.title--main
@@ -22,46 +23,49 @@ section.offers.bg--gris-light.text--center
                     li Optimización SEO
                     li Portada One Page
                     li 5 landing Page
-section.portfolio.bg--gris-medium
+section.portfolio.bg--gris-medium.text--center
     article.portfolio__box.max-width
         h2.title.title--main
             | Nuestros Trabajos
         p
             | Nuestras recomendaciones estan en la calle, puedes preguntar quien es DiloDigital y ya te daran nuestras referencias , y si eso no basta mira nuestros ultimos trabajos
         each val in ["img/aprendiendo.png", "img/arawana.png", "img/arborizaciones.png", "img/chas.png", "img/mimarpuven.png", "img/negrita.png", "img/recoinsa.png","img/trazo.png"]
-            portfolio__item
+            .portfolio__item
                 img(src=val, class="img-responsive", alt=val, width="328", height="288")
     article.portfolio__testimonials
         each val in ["Testimonials Yan", "Testimonials Renzo"]
             .portfolio__testimonials-item
                 figure.sin-margin
-                    img(src="https://placeimg.com/200/200/animals",class="img-responsive", alt=val , width="200" , height="200")
+                    img(src="https://placeimg.com/400/400/tech",class="img-responsive", alt=val , width="400" , height="400")
                 p
                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae reiciendis facere voluptate quaerat commodi molestias tempora provident enim assumenda doloribus doloremque magni dolor atque cupiditate tempore reprehenderit, dolores aliquam. Qui.
 section.contact.text--center.text--white
     .max-width
         .contact__form
-            h2.title.title--main
-                | Queremos Saber de tí
-            p
-                | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
-            form(action="",method="POST", class="form")
-                .form__group
-                    label(for="nombre") Nombre
-                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
-                .form__group
-                    label(for="nombre") E-mail
-                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="E-mail")
-                .form__group
-                    label(for="nombre") Teléfono
-                    input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Teléfono")
-                .form__group
-                    label(for="nombre") Mensaje
-                    textarea(name="mensaje", cols="30", rows="10",class="form__control",placeholder="Mensaje")
-                .form__submit
+            .contact__information
+                h2.title.title--main
+                    | Queremos Saber de tí
+                p
+                    | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
+            .contact__formulario
+                form(action="",method="POST", class="form")
+                    .form__group
+                        label(for="nombre") Nombre
+                        input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                    .form__group
+                        label(for="nombre") E-mail
+                        input(type="text",name="nombre",class="form__control",id="nombre",placeholder="E-mail")
+                    .form__group
+                        label(for="nombre") Teléfono
+                        input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Teléfono")
+                    .form__group
+                        label(for="nombre") Mensaje
+                        textarea(name="mensaje", cols="30", rows="10",class="form__control",placeholder="Mensaje")
+                    .form__submit
                     input(type="submit",value="Enviar",class="btn btn--submit")
-        .contact__image
-            img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
+            .contact__image
+                figure.sin-margin
+                    img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
 
 
 

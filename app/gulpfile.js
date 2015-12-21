@@ -6,7 +6,8 @@ var gulp         = require('gulp'), // Gulp
     imagemin     = require('gulp-imagemin'), // Imagemin
     concat       = require('gulp-concat'), // Concat
     changed      = require('gulp-changed'), // Changed
-    browsersync  = require('browser-sync'); // Browser-Sync
+    browsersync  = require('browser-sync'), // Browser-Sync
+    rupture      = require('rupture'); // Rupture Stylus
 
 
 // Aqui configuramos todas las rutas
@@ -54,7 +55,7 @@ gulp.task('stylus', function(){
             '!' + dev_path.styl + '_*'
         ])
         .pipe(stylus({
-            use: [nib(),autoprefixer()],
+            use: [nib(),autoprefixer(),rupture()],
             compress: true
         }))
         .on('error', console.log)

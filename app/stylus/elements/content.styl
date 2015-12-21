@@ -38,7 +38,9 @@ fieldset
   padding 0
 
 p
-  font-size: 1.7em
+  font-size 1.7em
+  +above(b2)
+    font-size 1.1em
 
 textarea
   resize vertical
@@ -46,14 +48,59 @@ textarea
 .bubble
   p
     font-size 1.75em
+    font-family kaushanscript-regular-webfont
   &__center
     background-image url("img/bg_header.png")
     background-size cover
     background-position center center
     background-repeat no-repeat
-    height 380px
+    height 300px
     overflow hidden
     padding 2em 0 0
+    figure
+      center-block(265px)
+    +above(b2)
+      background-image none
+      height 250px
+      absolute left 150px top 380px
+      figure
+        width 130px
+
+  +above(b2)
+    position relative
+    height 650px
+    &__left
+      background-color azul
+      position relative
+      width 80%
+      height 60%
+      padding 7px
+      border-radius 50%
+      overflow hidden
+      margin-left 1.7em
+      margin-bottom 2em
+      &::after
+        content ''
+        position absolute
+        border-style solid
+        border-width 24px 15px 0
+        border-color red transparent
+        display block
+        width 0
+        z-index 1
+        margin-left -15px
+        bottom -24px
+        left 25px
+      h2
+        padding 1em 2.5em 0
+        font-size: 2.5em
+      p
+        font-size: 1.5em
+        padding 0 2em 1em
+    &__right
+      absolute top 420px right 140px
+
+
 
 .browserupgrade
   margin 0.2em 0
@@ -61,27 +108,45 @@ textarea
   color rojo
   padding 0.2em 0
 
-
 .contact
   &__image
-    height 300px
+    height 267px
     overflow hidden
+    figure
+      center-block(260px)
+  +above(b2)
+    &__form
+      position relative
+      height 900px
+    &__image
+      absolute top left 100px
+      height 440px
+    &__information
+      absolute top 100px right 70px
+      width 300px
+    &__formulario
+      absolute bottom left
+      width 100%
 
 .footer
   padding 0 0 0.5em
   background-position top
   background-color gris_dark
   padding 0.5em 0
-
-
-
-
-
+  figure
+    center-block(305px)
 
 .header
  background-color gris_light
  &__top
-   padding 2.5em 0
+   padding 2.5em 0 1em
+   +above(b1)
+    padding 1em
+ &__bottom
+   padding 1em 0
+   background-color azul
+   +above(b2)
+    background-color transparent
 
 
 .hidden
@@ -91,18 +156,11 @@ textarea
   overflow hidden
   width 260px
   margin-left 6px
-
-@media screen and (min-width:b2)
-
-  .logo
+  +above(b2)
     margin 0.1em 0 0 1em
     float left
-
-@media screen and (min-width:b4)
-
-  .logo
+  +above(b4)
     margin-top 0.2em
-
 
 .offers
   p
@@ -113,38 +171,74 @@ textarea
     background-color blanco
     border-radius 0 0 1em 1em
     margin-bottom 1em
-
+    center-block(320px)
+    li
+      padding 0.5em 0
+      box-sizing border-box
+    +above(b2)
+      display-inline-block()
+      height 300px
 
 .portfolio
   &__box
     display none
+    +above(b2)
+      display block
+      padding 1em
+  +above(b2)
+    &__item
+      display-inline-block()
+      width 45%
+      margin 0.5em
   &__testimonials
     width 97%
     margin 0 auto 0.5em
-
+    padding-bottom 1em
     &-item
       background-color gris_dark
       color blanco
       font-size 0.8em
       padding 0.5em 1em
       margin 1em 0
+      text-align: left
+    +above(b1)
+      &-item
+        margin 0 0 1em 0
+        figure,
+        p
+          display-inline-block()
+        figure
+          margin-right 0.5em
+          width 200px
+        p
+          width 50%
+          font-size 1.2em
+          margin 0
+    +above(b2)
+      &-item
+        display-inline-block()
+        width 41%
+        margin 0 0.5em
+        figure
+          width 40%
+          margin-right 0.3em
 
-
-
-
-
+        p
+          font-size 0.91em
+          width 57%
 
 .services
   &__information
     margin-bottom 3em
     p
       font-size 1.3em
-
-
   &__image
     margin 1em 0 2em
-
-
+    figure
+      center-block(220px)
+      +above(b2)
+        width 490px
+        height 300px
 
 .title
   margin 0.2em 0
@@ -155,10 +249,6 @@ textarea
   &--offers
     color blanco
     background linear-gradient(left, 40% #F9AE00, #F39200)
-
-
-
-
 
 .visuallyhidden
   border 0
