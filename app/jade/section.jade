@@ -13,7 +13,7 @@ section.offers.bg--gris-light.text--center
     div.max-width
         h2.title.title--main
             | Ofertas Navideñas
-        p
+        p.text-main
             | Tenemos estos bonitos paquetes para ti, escoge el que más te guste desde un economico pero funcional PLATA hasta un completo y exclusivo ORO
         each val in ["Bronce", "Oro", "Plata"]
             .offers__item
@@ -27,7 +27,7 @@ section.portfolio.bg--gris-medium.text--center
     article.portfolio__box.max-width
         h2.title.title--main
             | Nuestros Trabajos
-        p
+        p.text-main
             | Nuestras recomendaciones estan en la calle, puedes preguntar quien es DiloDigital y ya te daran nuestras referencias , y si eso no basta mira nuestros ultimos trabajos
         each val in ["img/aprendiendo.png", "img/arawana.png", "img/arborizaciones.png", "img/chas.png", "img/mimarpuven.png", "img/negrita.png", "img/recoinsa.png","img/trazo.png"]
             .portfolio__item
@@ -45,7 +45,7 @@ section.contact.text--center.text--white
             .contact__information
                 h2.title.title--main
                     | Queremos Saber de tí
-                p
+                p.text-main
                     | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
             .contact__formulario
                 form(action="",method="POST", class="form")

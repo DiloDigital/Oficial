@@ -109,24 +109,29 @@ textarea
   padding 0.2em 0
 
 .contact
+
   &__image
     height 267px
     overflow hidden
     figure
       center-block(260px)
   +above(b2)
+    center-block(768px)
     &__form
       position relative
       height 900px
     &__image
-      absolute top left 100px
+      absolute top left 15%
       height 440px
     &__information
-      absolute top 100px right 70px
+      absolute top 100px right 10%
       width 300px
     &__formulario
       absolute bottom left
       width 100%
+
+
+
 
 .footer
   padding 0 0 0.5em
@@ -179,17 +184,31 @@ textarea
       display-inline-block()
       height 300px
 
+
+
 .portfolio
   &__box
     display none
     +above(b2)
       display block
       padding 1em
+
   +above(b2)
     &__item
       display-inline-block()
       width 45%
       margin 0.5em
+      max-width 345px
+
+  +above(b3)
+    &__item
+      max-width 220px
+
+  +above(b4)
+    &__item
+      max-width 270px
+
+
   &__testimonials
     width 97%
     margin 0 auto 0.5em
@@ -226,6 +245,15 @@ textarea
         p
           font-size 0.91em
           width 57%
+    +above(b3)
+      &-item
+        figure
+          width 25%
+          padding 2em
+        p
+          font-size 1.2em
+          padding-top 2em
+          width 63%
 
 .services
   &__information
