@@ -4,8 +4,16 @@ label
 .form
     overflow hidden
     width 100%
+
     &__group
         margin 0.5em 0
+        +above(b3)
+            width 70%
+            &:nth-child(2),
+            &:nth-child(3)
+                width 34.7%
+                display-inline-block()
+
     &__control
         display: block;
         width: 100%;
@@ -28,6 +36,8 @@ label
         &::-moz-placeholder
             color: #999;
             opacity: 1
+
+
 
 textarea.form__control
     height 200px

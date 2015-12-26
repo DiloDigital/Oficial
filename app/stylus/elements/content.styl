@@ -150,7 +150,7 @@ textarea
         width 100%
     &__formulario
       relative bottom right
-      width 79%
+      width 100%
       overflow hidden
 
 
@@ -158,10 +158,17 @@ textarea
 
 
 .footer
-  padding 0 0 0.5em
-  background-position top
+  margin-top 1em
+  padding 1em 0
   background-color gris_dark
-  padding 0.5em 0
+  &:before
+    content " "
+    background-image url("img/footer.png")
+    background-repeat repeat-x
+    display block
+    height 35px
+    margin-top -30px
+
   figure
     center-block(305px)
 
@@ -191,6 +198,7 @@ textarea
     margin-top 0.2em
 
 .offers
+  background-color #ECECEC
   p
     font-size 1.3em
     font-family lora-regular-webfont
@@ -208,6 +216,7 @@ textarea
       height 300px
 
 .portfolio
+  background-color #DFDFDF
   &__box
     display none
     +above(b2)
@@ -279,6 +288,7 @@ textarea
           padding-top 0.7em
 
 .services
+  overflow hidden
   &__information
     margin-bottom 3em
     p
@@ -290,6 +300,20 @@ textarea
       +above(b2)
         width 490px
         height 300px
+  +above(b3)
+    &__information
+      float right
+      width 60%
+      p
+        text-align left
+    &__image
+      float left
+      width 33%
+      margin 1em
+      overflow hidden
+      height 440px
+      figure
+        center-block(345px)
 
 .title
   margin 0.2em 0
