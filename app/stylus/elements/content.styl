@@ -115,7 +115,6 @@ textarea
       +above(b4)
         width calc(98% - 611px)
 
-
 .browserupgrade
   margin 0.2em 0
   background primary_color--dark
@@ -207,9 +206,6 @@ textarea
   background-size cover
   background-position center center
   background-repeat no-repeat
-
-.hidden
-  display none
 
 .logo
   overflow hidden
@@ -385,8 +381,9 @@ textarea
       padding 10px
       position absolute
       right 0
-      top -45px
-      width 55px
+      top -50px
+      width 50px
+
       &--bar
         background gris_dark
         display block
@@ -396,6 +393,10 @@ textarea
         & + .nav__main-toggle--bar
             margin-top 7px
       &--active
+          top -63px
+          width 40px
+          height 30px
+          right 15px
           .nav__main-toggle--bar
               margin 0
               position absolute
@@ -405,10 +406,8 @@ textarea
                   opacity 0
               &:nth-child(3)
                   transform: rotate(-45deg);
-
-
     &-list
-      background rojo
+      background amarillo
       display none
       list-style none
       margin 0 0 10px
@@ -416,7 +415,7 @@ textarea
       position relative
       width 100%
       li
-          border-bottom 1px solid amarillo
+          border-bottom 1px solid azul
           border-right 0
           width 100%
           &:last-child
@@ -424,7 +423,7 @@ textarea
           &:first-child
               a:after
                   border 6px solid transparent
-                  border-bottom-color blanco
+                  border-bottom-color rojo
                   border-top 0
                   content ''
                   height 0
@@ -433,7 +432,7 @@ textarea
                   top -6px
                   width 0
           a
-              color primary_text
+              color gris_dark
               display block
               font-family kaushanscript-regular-webfont
               font-size 1.3em
@@ -442,28 +441,23 @@ textarea
               text-decoration none
               transition all .3s ease-in
               width: 100%;
+
               &:hover
-                  background-color gris_light
-
-
-
-
-
-
+                  background-color rojo
+                  color blanco
       li.current-menu-item
         a
-          background-color amarillo
-          border-color gris_dark--light
+          background-color rojo
+          border-color gris_dark
           color blanco
 
       &--open
           display block !important
+          margin-top 1em !important
           .header__bottom--navegation
               &__child
                   display block
-
-@media screen and (min-width:b2)
-
++above(b2)
   .nav
     &__main
       float right
