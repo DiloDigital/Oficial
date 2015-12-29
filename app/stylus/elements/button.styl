@@ -17,17 +17,12 @@
     &--secundary
         center-block(120px)
 
-
-
-
-
     &--bubble
         absolute top left
         height auto
         font-family kaushanscript-regular-webfont
-
-    +above(b2)
-        &--bubble
+        box-sizing border-box
+        +above(b2)
             background-image url("img/btn--bubble.png")
             background-color transparent
             background-repeat no-repeat
@@ -36,23 +31,24 @@
             line-height 178px
             overflow hidden
             font-family kaushanscript-regular-webfont
-            font-size 1.5em
-            padding 0 0.8em
-    +above(b3)
-        &--bubble
+            font-size 1.8em
+            padding 0 1.8em
+            relative top right
+
+        +above(b3)
             background-size 100% 90%
             line-height 145px
-            padding 0 1em 0 0.2em
+            padding 0 1em 0 1.5em
             relative top left
             float right
             width 42%
-    +above(b4)
-        &--bubble
+            font-size 1.5em
+        +above(b4)
             width 222px
             height 178px
             background-size 100% 100%
             padding 0 2.8em
-            box-sizing border-box
+
             line-height 178px
 
 
