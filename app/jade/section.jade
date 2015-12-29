@@ -3,9 +3,10 @@ section.services.text--center
         .services__information
             h2.title.title--main.text--yellow
                 | ¿Qué hacemos?
-            p.text--white
+            p.text--white.text--important
                 |  Lorem ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. lorem ipsum ha sido el texto relleno estandar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galeria de textos y lkos mezclo de tal manera que logro hacer un libro de textos especimen. no solo sobrevivio 500 años
-            a(href="#", class="btn btn--secundary") +
+            a(href="#", class="btn btn--secundary")
+                img(src="img/btn--servicios.png", alt="Boton Servicios", class="img-responsive")
         .services__image
             figure.sin-margin
                 img(src="img/mascota_servicios.png", class="img-responsive", alt="Servicios DiloDigital" , width="690" , height="880")
@@ -13,7 +14,7 @@ section.offers.bg--gris-light.text--center
     div.max-width
         h2.title.title--main
             | Ofertas Navideñas
-        p.text-main
+        p.text--important
             | Tenemos estos bonitos paquetes para ti, escoge el que más te guste desde un economico pero funcional PLATA hasta un completo y exclusivo ORO
         each val in ["Bronce", "Oro", "Plata"]
             .offers__item
@@ -27,7 +28,7 @@ section.portfolio.bg--gris-medium.text--center
     article.portfolio__box.max-width
         h2.title.title--main
             | Nuestros Trabajos
-        p.text-main
+        p.text--important
             | Nuestras recomendaciones estan en la calle, puedes preguntar quien es DiloDigital y ya te daran nuestras referencias , y si eso no basta mira nuestros ultimos trabajos
         each val in ["img/aprendiendo.png", "img/arawana.png", "img/arborizaciones.png", "img/chas.png", "img/mimarpuven.png", "img/negrita.png", "img/recoinsa.png","img/trazo.png"]
             .portfolio__item
@@ -46,7 +47,7 @@ section.contact.text--center.text--white
                 .contact__information
                     h2.title.title--main
                         | Queremos Saber de tí
-                    p.text-main
+                    p.text--important
                         | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
                 .contact__formulario
                     form(action="",method="POST", class="form")

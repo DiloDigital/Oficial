@@ -37,11 +37,6 @@ fieldset
   margin 0
   padding 0
 
-p
-  font-size 1.7em
-  +above(b2)
-    font-size 1.1em
-
 textarea
   resize vertical
 
@@ -49,14 +44,20 @@ textarea
   p
     font-size 1.75em
     font-family kaushanscript-regular-webfont
+
+  &__right
+    relative top left
+    height 400px
   &__center
     background-image url("img/bg_header.png")
     background-size cover
-    background-position center center
+    background-position center top
     background-repeat no-repeat
     height 300px
     overflow hidden
-    padding 2em 0 0
+    padding 0
+    absolute left top 19%
+    width 100%
     figure
       center-block(265px)
     +above(b2)
@@ -72,6 +73,11 @@ textarea
       figure
         width 100%
         max-width 200px
+  &__left
+    h2
+      span
+        display block
+
   +above(b2)
     position relative
     &__left
@@ -219,15 +225,12 @@ textarea
 
 .offers
   background-color #ECECEC
-  p
-    font-size 1.3em
-    font-family lora-regular-webfont
   &__item
     border gris_dark
     background-color blanco
     border-radius 0 0 1em 1em
     margin-bottom 1em
-    center-block(320px)
+    center-block(98%)
     li
       padding 0.5em 0
       box-sizing border-box
@@ -311,8 +314,7 @@ textarea
   overflow hidden
   &__information
     margin-bottom 3em
-    p
-      font-size 1.3em
+
   &__image
     margin 1em 0 2em
     figure
@@ -339,34 +341,12 @@ textarea
   margin 0.2em 0
   font-family kaushanscript-regular-webfont
   &--main
-    font-size 3.15em
+    font-size 2.8em
     font-weight normal
+    line-height 1.2
   &--offers
     color blanco
     background linear-gradient(left, 40% #F9AE00, #F39200)
-
-.visuallyhidden
-  border 0
-  clip rect(0 0 0 0)
-  height 1px
-  margin -1px
-  overflow hidden
-  padding 0
-  position absolute
-  width 1px
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus
-  clip auto
-  height auto
-  margin 0
-  overflow visible
-  position static
-  width auto
-
-.invisible
-  visibility hidden
-
 
 .nav
   &__main

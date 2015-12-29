@@ -1,6 +1,28 @@
 .hidden
   display none
 
+.visuallyhidden
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+  clip auto
+  height auto
+  margin 0
+  overflow visible
+  position static
+  width auto
+
+.invisible
+  visibility hidden
+
 .max-width
     width 100%
     max-width 1200px
@@ -40,15 +62,10 @@
     &--white
         color blanco
         text-decoration none
-    +above(b2)
-        &-main
-            center-block(95%)
-    +above(b3)
-        &-main
-            center-block(80%)
-    +above(b4)
-        &-main
-            center-block(65%)
+    &--important
+      font-size 1.4em
+      center-block(80%)
+
 
 // color Background
 
