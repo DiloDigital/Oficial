@@ -1,26 +1,26 @@
 ::-moz-selection
   background azul
-  text-shadow none
   color blanco
+  text-shadow none
 
 ::selection
   background azul
-  text-shadow none
   color blanco
+  text-shadow none
 
 html
-  color primary_text
-  font-size 1em
-  line-height 1.4
-  font-family lora-regular-webfont
   background-color azul
+  color primary_text
+  font-family lora-regular-webfont
+  font-size 1em
   font-weight normal
+  line-height 1.4
 
 hr
-  display block
-  height 1px
   border 0
   border-top 1px solid gris_dark
+  display block
+  height 1px
   margin 1em 0
   padding 0
 
@@ -43,96 +43,98 @@ textarea
 .bubble
   p
     font-family kaushanscript-regular-webfont
-
   &__right
-    relative top left
     height 400px
-
+    relative top left
     +above(b2)
-      overflow hidden
       background-image url("img/bg_header.png")
-      background-size cover
       background-repeat no-repeat
+      background-size cover
+      overflow hidden
     +above(b3)
-      display-inline-block()
-      width 40%
-      margin-top 1em
       background-image none
+      display-inline-block()
+      margin-top 1em
+      width 40%
     +above(b4)
       width calc(98% - 611px)
   &__center
+    absolute left top 19%
     background-image url("img/bg_header.png")
-    background-size cover
     background-position center top
     background-repeat no-repeat
+    background-size cover
     height 300px
     overflow hidden
     padding 0
-    absolute left top 19%
     width 100%
     figure
       center-block(265px)
     +above(b2)
       background-image none
-      padding 0
       float left
-      width 60%
       height auto
+      padding 0
       relative top left
+      width 60%
       figure
         width 130px
     +above(b3)
       width 50%
       figure
-        width 100%
         max-width 200px
+        width 100%
   &__left
     h2
       span
         display block
+
     +above(b2)
-      position relative
       background-image url("img/bubble__left_tablet.png")
       background-repeat no-repeat
-      width 674px
       height 472px
       padding 0
+      position relative
+      width 674px
       h2
-        padding 1.5em 3em 0
         font-size 2.5em
+        padding 1.5em 3em 0
         span
           display-inline-block()
       p
+        center-block(70%)
         font-size 1.55em
         padding 0 2em 1em
-        center-block(70%)
+      &--notimage
+        background-image none
     +above(b3)
       background-image url("img/bubble__left_pc.png")
       background-size 100% 100%
       display-inline-block()
       width 58%
       h2
-        padding 2em 4em .5em 2em
         margin 0
+        padding 2em 4em .5em 2em
       p
-        padding 0 4em 0.5em 0.2em
-        font-size: 1.3em
         center-block(60%)
-        margin-top 0
+        font-size: 1.3em
         margin-bottom 0
+        margin-top 0
+        padding 0 4em 0.5em 0.2em
+      &--notimage
+        background-image none
     +above(b4)
-      width 611px
       height 371px
+      width 611px
       h2
         padding 1.5em 3em .2em 2em
       p
         padding 0 3em 0 1em
 
-
 .browserupgrade
-  margin 0.2em 0
   background primary_color--dark
   color rojo
+  margin 0.2em 0
   padding 0.2em 0
 
 .contact
@@ -147,8 +149,8 @@ textarea
   +above(b2)
     center-block(768px)
     &__form
-      position relative
       height 900px
+      position relative
     &__image
       absolute top left 15%
       height 440px
@@ -164,12 +166,12 @@ textarea
       height auto
     &-right
       float right
-      width 67%
-      text-align: left
       margin-left 15px
+      text-align: left
+      width 67%
     &__image
-      relative top left
       float left
+      relative top left
     &__information
       relative top right
       width 100%
@@ -177,18 +179,18 @@ textarea
         margin 0
         width 100%
     &__formulario
+      overflow hidden
       relative bottom right
       width 100%
-      overflow hidden
 
 .footer
+  background-color gris_dark
   margin-top 1em
   padding 1em 0
-  background-color gris_dark
   &:before
-    content " "
     background-image url("img/footer.png")
     background-repeat repeat-x
+    content " "
     display block
     height 35px
     margin-top -30px
@@ -203,30 +205,49 @@ textarea
    +above(b1)
     padding 1em
  &__bottom
-   padding 1em 0
    background-color azul
+   padding 1em 0
+   &--blue
+     padding 0
+     .bubble
+       &__right
+         height 261px
+         background-color #193F62
+       &__center
+         background-image none
+         top 0
+         height 261px
+         figure
+           margin-top 80px
    +above(b2)
     background-color transparent
    +above(b3)
-    width 100%
     margin 0
+    width 100%
+    &--blue
+      background-color azul
+
    +above(b4)
     center-block(1140px)
+    &--blue
+      center-block(100%)
  +above(b3)
   background-image url("img/bg_header.png")
-  z-index 1
-  relative top left
-  background-size cover
   background-position center center
   background-repeat no-repeat
+  background-size cover
+  relative top left
+  z-index 1
+  &--notimage
+    background-image none
 
 .logo
+  margin-left 6px
   overflow hidden
   width 260px
-  margin-left 6px
   +above(b2)
-    margin 0.1em 0 0 1em
     float left
+    margin 0.1em 0 0 1em
   +above(b4)
     margin-top 0.2em
     width 305px
@@ -234,15 +255,15 @@ textarea
 .offers
   background-color #ECECEC
   &__item
-    border gris_dark
     background-color blanco
+    border gris_dark
     border-radius 0 0 1em 1em
-    margin-bottom 1em
     center-block(98%)
+    margin-bottom 1em
     max-width 320px
     li
-      padding 0.5em 0
       box-sizing border-box
+      padding 0.5em 0
     +above(b2)
       display-inline-block()
       height 300px
@@ -257,9 +278,9 @@ textarea
   +above(b2)
     &__item
       display-inline-block()
-      width 45%
       margin 0.5em
       max-width 345px
+      width 45%
   +above(b3)
     &__item
       max-width 22.4%
@@ -267,15 +288,15 @@ textarea
     &__item
       max-width 240px
   &__testimonials
-    width 97%
     margin 0 auto 0.5em
     padding-bottom 1em
+    width 97%
     &-item
       background-color gris_dark
       color blanco
       font-size 0.8em
-      padding 0.5em 1em
       margin 1em 0
+      padding 0.5em 1em
       text-align: left
     +above(b1)
       &-item
@@ -287,17 +308,17 @@ textarea
           margin-right 0.5em
           width 200px
         p
-          width 50%
           font-size 1.2em
           margin 0
+          width 50%
     +above(b2)
       &-item
         display-inline-block()
-        width 41%
         margin 0 0.5em
+        width 41%
         figure
-          width 40%
           margin-right 0.3em
+          width 40%
 
         p
           font-size 0.91em
@@ -306,8 +327,8 @@ textarea
       &-item
         width 44.4%
         figure
-          width 25%
           padding 1em
+          width 25%
         p
           font-size 1.2em
           padding-top 0.5em
@@ -329,8 +350,17 @@ textarea
     figure
       center-block(220px)
       +above(b2)
-        width 490px
         height 300px
+        width 490px
+  &__item
+    background-color #ECECEC
+    &--icon
+      center-block(90%)
+      max-width 320px
+      margin-bottom 0.8em
+      padding 0.5em
+      figure
+        center-block(70%)
   +above(b3)
     &__information
       float right
@@ -339,23 +369,23 @@ textarea
         text-align left
     &__image
       float left
-      width 33%
+      height 440px
       margin 1em
       overflow hidden
-      height 440px
+      width 33%
       figure
         center-block(345px)
 
 .title
-  margin 0.2em 0
   font-family kaushanscript-regular-webfont
+  margin 0.2em 0
   &--main
     font-size 2.8em
     font-weight normal
     line-height 1.2
   &--offers
-    color blanco
     background linear-gradient(left, 40% #F9AE00, #F39200)
+    color blanco
 
 .nav
   &__main
@@ -382,10 +412,10 @@ textarea
         & + .nav__main-toggle--bar
             margin-top 7px
       &--active
-          top -63px
-          width 40px
           height 30px
           right 15px
+          top -63px
+          width 40px
           .nav__main-toggle--bar
               margin 0
               position absolute
@@ -450,8 +480,8 @@ textarea
   .nav
     &__main
       float right
-      width calc(100%-150px)
       margin-top 1em
+      width calc(100%-150px)
       &-toggle
         display none
       &-list
@@ -460,17 +490,17 @@ textarea
         li
           border 0
           display-inline-block()
-          width auto
           overflow hidden
+          width auto
           &:first-child
               a:after
                   display none
           a
+            box-sizing border-box
             color primary_text
+            display block
             font-size 1.2em
             margin 0.5em 0.2em
-            display block
-            box-sizing border-box
             width 100px
             &:hover
               border-bottom 1px solid azul

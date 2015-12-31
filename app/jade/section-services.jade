@@ -1,0 +1,57 @@
+section.services.services__item.text--center
+    div.max-width
+        each val in ["img/web.png", "img/mkt_digital.png", "img/movil.png", "img/design.png", "img/fotografia.png", "img/pop.png"]
+            .services__item--icon
+                figure.sin-margin
+                    img(src=val, class="img-responsive", alt=val, height="390", width="390")
+                h4 Diseño Web
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean commodo ligula eget dolor.
+                a(href="#") Leer más
+
+section.portfolio.bg--gris-medium.text--center
+    article.portfolio__testimonials
+        each val in ["Testimonials Yan", "Testimonials Renzo"]
+            .portfolio__testimonials-item
+                figure.sin-margin
+                    img(src="https://placeimg.com/400/400/tech",class="img-responsive", alt=val , width="400" , height="400")
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae reiciendis facere voluptate quaerat commodi molestias tempora provident enim assumenda doloribus doloremque magni dolor atque cupiditate tempore reprehenderit, dolores aliquam. Qui.
+section.contact.text--center.text--white
+    .max-width
+        .contact-right
+            .contact__form
+                .contact__information
+                    h2.title.title--main
+                        | Queremos Saber de tí
+                    p.text--important
+                        | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
+                .contact__formulario
+                    form(action="",method="POST", class="form")
+                        .form__group
+                            label(for="nombre") Nombre
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                        .form__group
+                            label(for="nombre") E-mail
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="E-mail")
+                        .form__group
+                            label(for="nombre") Teléfono
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Teléfono")
+                        .form__group
+                            label(for="nombre") Mensaje
+                            textarea(name="mensaje", cols="30", rows="10",class="form__control",placeholder="Mensaje")
+                        .form__submit
+                            input(type="submit",value="Enviar",class="btn btn--submit")
+        .contact__image
+            figure.sin-margin
+                img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
+
+
+
+
+
+
+
+
+
+
+
