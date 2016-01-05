@@ -209,16 +209,22 @@ textarea
    padding 1em 0
    &--blue
      padding 0
+     background-color azul !important
      .bubble
        &__right
          height 261px
          background-color #193F62
+         +above(b2)
+          background-image none
+          background-color azul
        &__center
          background-image none
          top 0
          height 261px
          figure
            margin-top 80px
+
+
    +above(b2)
     background-color transparent
    +above(b3)
@@ -270,6 +276,8 @@ textarea
 
 .portfolio
   background-color #DFDFDF
+  &--white
+    background-color blanco
   &__box
     display none
     +above(b2)
@@ -353,7 +361,7 @@ textarea
         height 300px
         width 490px
   &__item
-    background-color #ECECEC
+    background-color blanco
     &--icon
       center-block(90%)
       max-width 320px
@@ -361,6 +369,13 @@ textarea
       padding 0.5em
       figure
         center-block(70%)
+      +above(b2)
+        display-inline-block()
+        width 42%
+        margin 4% 2%
+
+
+
   +above(b3)
     &__information
       float right
