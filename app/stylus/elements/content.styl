@@ -79,6 +79,7 @@ textarea
       width 60%
       figure
         width 130px
+
     +above(b3)
       width 50%
       figure
@@ -107,6 +108,12 @@ textarea
         padding 0 2em 1em
       &--notimage
         background-image none
+        height auto
+        h2
+          font-size 4em
+          padding 0.5em 1em 0
+        p
+          center-block(87.5%)
     +above(b3)
       background-image url("img/bubble__left_pc.png")
       background-size 100% 100%
@@ -123,6 +130,9 @@ textarea
         padding 0 4em 0.5em 0.2em
       &--notimage
         background-image none
+        h2
+          font-size 3.5em
+          padding 0.5em 1em
     +above(b4)
       height 371px
       width 611px
@@ -130,7 +140,17 @@ textarea
         padding 1.5em 3em .2em 2em
       p
         padding 0 3em 0 1em
-
+      &--notimage
+        h2
+          padding 0.2em
+          font-size 4.5em
+        p
+          font-size 1.5em
+          padding 0 1em
+          width 100%
+  &--max
+    center-block(100%)
+    max-width 1200px
 .browserupgrade
   background primary_color--dark
   color rojo
@@ -217,12 +237,25 @@ textarea
          +above(b2)
           background-image none
           background-color azul
+         +above(b3)
+          height auto
        &__center
          background-image none
          top 0
          height 261px
          figure
            margin-top 80px
+           +above(b2)
+            margin-top 0
+            width 195px
+           +above(b3)
+            margin-top 50px
+         +above(b3)
+          height auto
+     +above(b3)
+      padding 2em 0
+      .btn--bubble
+        top 50px
 
 
    +above(b2)
