@@ -238,8 +238,9 @@ textarea
      background-color azul !important
      .bubble
        &__right
-         height 261px
+         height 320px
          background-color #193F62
+         overflow hidden
          +above(b2)
           background-image none
           background-color azul
@@ -247,8 +248,8 @@ textarea
           height auto
        &__center
          background-image none
-         top 0
-         height 261px
+         top 27px
+         height auto
          figure
            margin-top 80px
            +above(b2)
@@ -258,6 +259,11 @@ textarea
             margin-top 50px
          +above(b3)
           height auto
+       .title--main
+         font-size: 3.6em
+       p
+         margin-top 0.5em
+         margin-bottom 0.9em
      +above(b3)
       padding 2em 0
       .btn--bubble
@@ -423,13 +429,19 @@ textarea
         width 490px
   &__item
     background-color blanco
+    padding 2em 0 1.5em
     &--icon
       center-block(90%)
       max-width 320px
-      margin-bottom 0.8em
+      margin-bottom 2.5em
       padding 0.5em
       figure
         center-block(70%)
+      p
+        margin 0 0 1.5em
+        color gris_dark
+      &:last-child
+        margin-bottom 1em
       +above(b2)
         display-inline-block()
         width 42%
@@ -459,6 +471,10 @@ textarea
     font-size 2.6em
     font-weight normal
     line-height 1.2
+  &--secundary
+    font-family lora-regular-webfont
+    margin 1.2em 0 0
+    font-size 1.2em
 
 
 .nav
