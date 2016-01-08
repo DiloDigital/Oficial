@@ -3,7 +3,7 @@ section.services.text--center
         .services__information
             h2.title.title--main.text--yellow
                 | ¿Qué hacemos?
-            p.text--white.text--important
+            p.text--white.text--important.text--important--min
                 |  Lorem ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. lorem ipsum ha sido el texto relleno estandar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galeria de textos y lkos mezclo de tal manera que logro hacer un libro de textos especimen. no solo sobrevivio 500 años
             a(href="page-header.html", class="btn btn--secundary")
                 img(src="img/btn--servicios.png", alt="Boton Servicios", class="img-responsive")
@@ -14,11 +14,25 @@ section.offers.bg--gris-light.text--center
     div.max-width
         h2.title.title--main
             | Ofertas Navideñas
-        p.text--important
-            | Tenemos estos bonitos paquetes para ti, escoge el que más te guste desde un economico pero funcional PLATA hasta un completo y exclusivo ORO
-        each val in ["Bronce", "Oro", "Plata"]
-            .offers__item
-                h3.title.title--main.title--offers=val
+        p.text--important.text--important--min
+            | Tenemos estos bonitos paquetes para ti, escoge el que más te guste desde un economico pero funcional PLATA hasta un más completo y exclusivo ORO.
+        ul.offers__box.list-none.sin-margin
+            li.offers__item
+                h3.title.title--main.title--offers Bronce
+                ul.list-none.sin-margin
+                    li Diseño Responsive
+                    li Optimización SEO
+                    li Portada One Page
+                    li 5 landing Page
+            li.offers__item
+                h3.title.title--main.title--offers Oro
+                ul.list-none.sin-margin
+                    li Diseño Responsive
+                    li Optimización SEO
+                    li Portada One Page
+                    li 5 landing Page
+            li.offers__item
+                h3.title.title--main.title--offers Plata
                 ul.list-none.sin-margin
                     li Diseño Responsive
                     li Optimización SEO
@@ -47,7 +61,7 @@ section.contact.text--center.text--white
                 .contact__information
                     h2.title.title--main
                         | Queremos Saber de tí
-                    p.text--important
+                    p.text--important.text--important--min
                         | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
                 .contact__formulario
                     form(action="",method="POST", class="form")
