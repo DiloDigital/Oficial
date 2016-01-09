@@ -48,10 +48,24 @@ section.portfolio.bg--gris-medium.text--center
             .portfolio__item
                 img(src=val, class="img-responsive", alt=val, width="328", height="288")
     article.portfolio__testimonials
-        each val in ["Testimonials Yan", "Testimonials Renzo"]
-            .portfolio__testimonials-item
-                figure.sin-margin
-                    img(src="https://placeimg.com/400/400/tech",class="img-responsive", alt=val , width="400" , height="400")
+        h2.title.title--main
+            | Ellos nos recomiendan
+
+        .portfolio__testimonials-item
+            figure.sin-margin
+                img(src="img/aaron.png",class="img-responsive", alt=val , width="460" , height="460")
+            figcaption.text--center
+                h3.title.title--testimonials Aaron Romero
+                span.title.title--secundary CEO Founder: Creative Dream
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae reiciendis facere voluptate quaerat commodi molestias tempora provident enim assumenda doloribus doloremque magni dolor atque cupiditate tempore reprehenderit, dolores aliquam. Qui.
+
+        .portfolio__testimonials-item
+            figure.sin-margin
+                img(src="img/hussam.png",class="img-responsive", alt=val , width="460" , height="460")
+            figcaption.text--center
+                h3.title.title--testimonials Marcelo Contreras
+                span.title.title--secundary Creador y promotor: Marca Chilito
                 p
                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae reiciendis facere voluptate quaerat commodi molestias tempora provident enim assumenda doloribus doloremque magni dolor atque cupiditate tempore reprehenderit, dolores aliquam. Qui.
 section.contact.text--center.text--white
