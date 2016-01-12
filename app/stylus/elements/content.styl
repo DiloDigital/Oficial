@@ -182,8 +182,8 @@ textarea
       height auto
       margin-top 1em
     &__information
-      absolute top 22px right 10%
-      width 300px
+      absolute top 83px right 10%
+      width 280px
     &__formulario
       absolute bottom left
       width 100%
@@ -343,13 +343,39 @@ textarea
       display-inline-block()
       height 300px
       margin 0 1em 1em
+      position absolute
       &:nth-child(1)
         margin-top 0
+        absolute left 2.3% bottom
+      &:nth-child(2)
+        display block
+        absolute left 25.5% top
       &:last-child
         margin-top 1em
+        absolute right 2.3% bottom
     +above(b3)
+      max-width 295px
+      &:nth-child(1)
+        margin-top 0
+        relative left auto bottom auto
+      &:nth-child(2)
+        display-inline-block()
+        relative left auto top auto
       &:last-child
         margin-top 0
+        relative right auto bottom auto
+    +above(b4)
+      max-width 320px
+
+  +above(b2)
+    &__box
+      position relative
+      height 646px
+      center-block(100%)
+      max-width 745px
+      +above(b3)
+        max-width 100%
+        height auto
 
 .portfolio
   background-color #DFDFDF
@@ -398,26 +424,40 @@ textarea
 
       &:last-child
         padding-bottom 2.5em
-
-
-
     +above(b2)
+      background-color inherit
+      color inherit
+      padding 0 1em
+      h2
+        padding 0
 
       &-item
         display-inline-block()
         margin 0 0.5em
-        width 48%
-        max-width 400px
-        margin 1.5em 0.5em 1em
+        width 46%
+        margin 1.5em 0.5em
         padding 0
+        min-height 210px
+        figure
+          float left
+          margin 0
+          width 18%
+          height 100%
+          margin 23px 0 0 8px
+        figcaption
+          float right
+          width 72%
+          text-align left
+          padding 0 1em
         &:last-child
-          padding-bottom 1.5em
+          padding-bottom 0
 
 .services
   overflow hidden
   &__information
-    margin-bottom 2em
-
+    +above(b2)
+      .text--yellow
+        color blanco
   &__image
     margin 0 0 1em
     figure
@@ -484,9 +524,6 @@ textarea
     font-family lora-regular-webfont
     margin 0.5em 0 0em
     font-weight 500
-
-
-
 
 .nav
   &__main
@@ -582,7 +619,6 @@ textarea
   .nav
     &__main
       float right
-      margin-top 1em
       width calc(100%-150px)
       &-toggle
         display none
@@ -601,9 +637,10 @@ textarea
             box-sizing border-box
             color primary_text
             display block
-            font-size 1.2em
+            font-size 1.3em
             margin 0.5em 0.2em
-            width 100px
+            width auto
+            padding 0.5em
             &:hover
               border-bottom 1px solid azul
 +above(b3)
