@@ -428,6 +428,7 @@ textarea
       background-color inherit
       color inherit
       padding 0 1em
+      max-width 757px
       h2
         padding 0
 
@@ -451,6 +452,25 @@ textarea
           padding 0 1em
         &:last-child
           padding-bottom 0
+    +above(b3)
+      max-width 100%
+      &-item
+        width 47%
+        min-height 196px
+        figure
+          width 24%
+          margin 20px
+          padding inherit 1em
+        figcaption
+          width 62.5%
+          margin 2px 22px 0 0
+          padding 0
+    +above(b4)
+      max-width 1070px
+      &-item
+        min-height 180px
+        figure
+          width 25%
 
 .services
   overflow hidden
@@ -646,6 +666,7 @@ textarea
 +above(b3)
   .nav
     &__main
+      margin-top 1.53em
       &-list
         li
           a
