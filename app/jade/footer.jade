@@ -1,3 +1,32 @@
+section.contact.text--center.text--white
+    .max-width
+        .contact-right
+            .contact__form
+                .contact__information
+                    h2.title.title--main
+                        | Queremos Saber de tí
+                    p.text--important
+                        | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
+                .contact__formulario
+                    form(action="",method="POST", class="form")
+                        .form__group
+                            label(for="nombre") Nombre
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                        .form__group
+                            label(for="nombre") E-mail
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="E-mail")
+                        .form__group
+                            label(for="nombre") Teléfono
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Teléfono")
+                        .form__group
+                            label(for="nombre") Mensaje
+                            textarea(name="mensaje", cols="30", rows="10",class="form__control",placeholder="Mensaje")
+                        .form__submit
+                            input(type="submit",value="Enviar",class="btn btn--submit")
+        .contact__image
+            figure.sin-margin
+                img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
+
 footer.footer.text-center
     figure.sin-margin
         img(src="img/logo_pie.png", class="img-responsive", alt="DiloDigital", width="300", height="70")

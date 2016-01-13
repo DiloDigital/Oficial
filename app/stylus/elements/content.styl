@@ -139,6 +139,8 @@ textarea
         h2
           font-size 3.5em
           padding 0.5em 1em
+        p
+          width 60%
     +above(b4)
       height 371px
       width 611px
@@ -153,7 +155,7 @@ textarea
         p
           font-size 1.5em
           padding 0 1em
-          width 100%
+          width 70%
   &--max
     center-block(100%)
     max-width 1200px
@@ -234,7 +236,7 @@ textarea
  &__top
    padding 0.5em
    +above(b1)
-    padding 1em
+    padding 1em 1em 0.7em
  &__bottom
    background-color azul
    &--blue
@@ -249,8 +251,13 @@ textarea
           background-image none
           background-color azul
           margin-bottom 2.5em
+          height 380px
+          a.btn--bubble
+            top 53px
+
          +above(b3)
           height auto
+          margin-bottom 1.8em
        &__center
          background-image none
          top 27px
@@ -259,9 +266,11 @@ textarea
            margin-top 80px
            +above(b2)
             margin-top 0
-            width 195px
+            width 255px
            +above(b3)
             margin-top 50px
+         +above(b2)
+          top 0
          +above(b3)
           height auto
        .title--main
@@ -269,6 +278,8 @@ textarea
        p
          margin-top 0.5em
          margin-bottom 0.9em
+         padding 0
+
      +above(b3)
       padding 2em 0
       .btn--bubble
@@ -287,6 +298,8 @@ textarea
     center-block(1140px)
     &--blue
       center-block(100%)
+
+
  +above(b2)
   background linear-gradient(top, 61% blanco, azul)
  +above(b3)
@@ -300,6 +313,12 @@ textarea
   height 750px
   &--notimage
     background-image none
+    height auto
+    .header__top
+      background blanco
+    +above(b4)
+      height auto !important
+
   +above(b4)
     height 690px
 
@@ -308,7 +327,7 @@ textarea
   width 260px
   +above(b2)
     float left
-    margin 0.1em 0 0 1em
+    margin 0.1em 0 0.55em 1em
   +above(b4)
     margin-top 0.2em
     width 305px
@@ -635,11 +654,17 @@ textarea
           .header__bottom--navegation
               &__child
                   display block
++above(b1)
+  .nav
+    &__main
+      &-list
+        margin 0
 +above(b2)
   .nav
     &__main
       float right
       width calc(100%-150px)
+
       &-toggle
         display none
       &-list
@@ -666,7 +691,7 @@ textarea
 +above(b3)
   .nav
     &__main
-      margin-top 1.53em
+      margin-top 0.7em
       &-list
         li
           a
@@ -674,6 +699,10 @@ textarea
             margin 0 0.5em
             padding 0 0.5em
             width auto
++above(b4)
+  .nav
+    &__main
+      margin-top 1.3em
 
 
 
