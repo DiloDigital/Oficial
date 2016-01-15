@@ -1,4 +1,4 @@
-section.contact.text--center.text--white
+section.contact.text--center.text--white#contactanos
     .max-width
         .contact-right
             .contact__form
@@ -8,21 +8,23 @@ section.contact.text--center.text--white
                     p.text--important
                         | ¿Tienes un proyecto interesante? ¿Una gran idea por desarrollar? ¿No sabes mucho de la web pero deseas empezar? ¡Te ayudaremos!
                 .contact__formulario
-                    form(action="",method="POST", class="form")
+                    form(action="mailer.php",method="POST", class="form", id="ajax-contact")
                         .form__group
                             label(for="nombre") Nombre
                             input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
                         .form__group
-                            label(for="nombre") E-mail
-                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="E-mail")
+                            label(for="correo") E-mail
+                            input(type="email",name="correo",class="form__control",id="correo",placeholder="E-mail")
                         .form__group
-                            label(for="nombre") Teléfono
-                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Teléfono")
+                            label(for="telefono") Teléfono
+                            input(type="text",name="telefono",class="form__control",id="telefono",placeholder="Teléfono")
                         .form__group
-                            label(for="nombre") Mensaje
-                            textarea(name="mensaje", cols="30", rows="10",class="form__control",placeholder="Mensaje")
+                            label(for="mensaje") Mensaje
+                            textarea(name="mensaje", cols="30", rows="10",class="form__control",id="mensaje", placeholder="Mensaje")
                         .form__submit
                             input(type="submit",value="Enviar",class="btn btn--submit")
+
+                        #form-messages
         .contact__image
             figure.sin-margin
                 img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
