@@ -75,7 +75,7 @@
       </div>
     </div>
   </section>
-  <section class="portfolio portfolio--white text--center">
+  <section class="portfolio portfolio--white text--center padding--medium">
     <article class="portfolio__testimonials">
       <h2 class="title title--main">Ellos nos recomiendan</h2>
       <div class="portfolio__testimonials-item">
@@ -94,7 +94,7 @@
       </div>
     </article>
   </section>
-  <section id="contactanos" class="contact text--center text--white">
+  <section id="contactanos" class="contact text--center text--white padding--medium">
     <div class="max-width">
       <div class="contact-right">
         <div class="contact__form">
@@ -106,19 +106,19 @@
             <form action="mailer.php" method="POST" id="ajax-contact" class="form">
               <div class="form__group">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form__control"/>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required="required" class="form__control"/>
               </div>
               <div class="form__group">
                 <label for="correo">E-mail</label>
-                <input type="email" name="correo" id="correo" placeholder="E-mail" class="form__control"/>
+                <input type="email" name="correo" id="correo" placeholder="E-mail" required="required" class="form__control"/>
               </div>
               <div class="form__group">
                 <label for="telefono">Teléfono</label>
-                <input type="text" name="telefono" id="telefono" placeholder="Teléfono" class="form__control"/>
+                <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required="required" class="form__control"/>
               </div>
               <div class="form__group">
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Mensaje" class="form__control"></textarea>
+                <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Mensaje" required="required" class="form__control"></textarea>
               </div>
               <div class="form__submit">
                 <input type="submit" value="Enviar" class="btn btn--submit"/>

@@ -1,4 +1,4 @@
-section.contact.text--center.text--white#contactanos
+section.contact.text--center.text--white#contactanos.padding--medium
     .max-width
         .contact-right
             .contact__form
@@ -11,16 +11,16 @@ section.contact.text--center.text--white#contactanos
                     form(action="mailer.php",method="POST", class="form", id="ajax-contact")
                         .form__group
                             label(for="nombre") Nombre
-                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre")
+                            input(type="text",name="nombre",class="form__control",id="nombre",placeholder="Nombre",required)
                         .form__group
                             label(for="correo") E-mail
-                            input(type="email",name="correo",class="form__control",id="correo",placeholder="E-mail")
+                            input(type="email",name="correo",class="form__control",id="correo",placeholder="E-mail",required)
                         .form__group
                             label(for="telefono") Teléfono
-                            input(type="text",name="telefono",class="form__control",id="telefono",placeholder="Teléfono")
+                            input(type="text",name="telefono",class="form__control",id="telefono",placeholder="Teléfono",required)
                         .form__group
                             label(for="mensaje") Mensaje
-                            textarea(name="mensaje", cols="30", rows="10",class="form__control",id="mensaje", placeholder="Mensaje")
+                            textarea(name="mensaje", cols="30", rows="10",class="form__control",id="mensaje", placeholder="Mensaje",required)
                         .form__submit
                             input(type="submit",value="Enviar",class="btn btn--submit")
 
@@ -28,7 +28,6 @@ section.contact.text--center.text--white#contactanos
         .contact__image
             figure.sin-margin
                 img(src="img/mascota_contacto.png",class="img-responsive", alt="Contactanos DiloDigital", width="520", height="880")
-
 footer.footer.text-center
     figure.sin-margin
         img(src="img/logo_pie.png", class="img-responsive", alt="DiloDigital", width="300", height="70")

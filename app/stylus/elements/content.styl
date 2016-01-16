@@ -51,8 +51,8 @@ textarea
       background-image url("img/bg_header_tablet.png")
       background-repeat no-repeat
       background-size 100% 100%
-      overflow hidden
       height 380px
+      overflow hidden
     +above(b3)
       background-image none
       display-inline-block()
@@ -110,8 +110,8 @@ textarea
       p
         center-block(70%)
         font-size 1.55em
-        padding 0 2em 1em
         margin-top 0.8em
+        padding 0 2em 1em
       &--notimage
         background-image none
         height auto
@@ -168,10 +168,10 @@ textarea
     relative left top
   &__image
     height 267px
+    margin-top 5em
     overflow hidden
     relative left
     z-index -1
-    margin-top 5em
     figure
       center-block(260px)
   +above(b2)
@@ -188,9 +188,9 @@ textarea
       width 280px
     &__formulario
       absolute bottom left
-      width 100%
-      top auto
       height 450px
+      top auto
+      width 100%
   +above(b3)
     center-block(92%)
     &__form
@@ -211,10 +211,10 @@ textarea
         margin 1em 0
         width 100%
     &__formulario
+      height auto
       overflow hidden
       relative bottom right
       width 100%
-      height auto
 
 .footer
   background-color gris_dark
@@ -240,18 +240,35 @@ textarea
  &__bottom
    background-color azul
    &--blue
-     padding 0
      background-color azul !important
+     padding 0
+     +above(b2)
+       &:after
+         absolute left right
+         border-color azul transparent transparent transparent
+         border-style solid
+         border-width 40px 40px 0 40px
+         content " "
+         height 0
+         margin-left auto
+         margin-right auto
+         width 0
+         +above(b3)
+          border-width 60px 60px 0 60px
+         +above(b4)
+          border-width 70px 70px 0 70px
+
+
      .bubble
        &__right
-         height 320px
          background-color #193F62
+         height 320px
          overflow hidden
          +above(b2)
-          background-image none
           background-color azul
-          margin-bottom 2.5em
+          background-image none
           height 380px
+          margin-bottom 2.5em
           a.btn--bubble
             top 53px
 
@@ -260,32 +277,33 @@ textarea
           margin-bottom 1.8em
        &__center
          background-image none
-         top 27px
          height auto
+         top 27px
          figure
            margin-top 80px
            +above(b2)
             margin-top 0
+            max-width 100%
             width 255px
            +above(b3)
-            margin-top 50px
+            margin-top 0px
          +above(b2)
           top 0
          +above(b3)
           height auto
        .title--main
          font-size: 3.6em
+         +above(b4)
+           font-size 4.2em
        p
-         margin-top 0.5em
          margin-bottom 0.9em
+         margin-top 0.5em
          padding 0
 
      +above(b3)
       padding 2em 0
       .btn--bubble
         top 50px
-
-
    +above(b2)
     background-color transparent
    +above(b3)
@@ -293,6 +311,11 @@ textarea
     width 100%
     &--blue
       background-color azul
+
+
+
+
+
 
    +above(b4)
     center-block(1140px)
@@ -308,9 +331,9 @@ textarea
   background-repeat no-repeat
   background-size 100% 100%
   height 100%
+  height 750px
   relative top left
   z-index 1
-  height 750px
   &--notimage
     background-image none
     height auto
@@ -338,49 +361,58 @@ textarea
     background-color blanco
     border-radius 0 0 1em 1em
     center-block(98%)
+    height 440px
     margin-bottom 2em
     max-width 320px
+    position relative
     .title--offers
-      background linear-gradient(left, 40% #715200, #4F3900)
       color blanco
       padding 0.5em 0
     &:nth-child(1)
       margin-top 1em
-    &:nth-child(2)
       .title--offers
         background linear-gradient(left, 40% #F9AE00, #F39200)
-    &:nth-child(3)
-      margin-bottom 1em
+    &:nth-child(2)
+      height 350px
       .title--offers
         background linear-gradient(left, 40% #565B5D, #454A4B)
+    &:nth-child(3)
+      height 320px
+      margin-bottom 1em
+      .title--offers
+        background linear-gradient(left, 40% #715200, #4F3900)
     ul
       padding 0.5em 0 1em
     li
       box-sizing border-box
-      padding 0.5em 0
+      padding 0.2em 0
     +above(b2)
       display-inline-block()
-      height 300px
+      height 435px
       margin 0 1em 1em
       position absolute
       &:nth-child(1)
-        margin-top 0
-        absolute left 2.3% bottom
-      &:nth-child(2)
-        display block
         absolute left 25.5% top
+        margin-top 0
+      &:nth-child(2)
+        absolute left 2.3% bottom
+        display block
       &:last-child
-        margin-top 1em
         absolute right 2.3% bottom
+        height 350px
+        margin-top 1em
     +above(b3)
       max-width 295px
       &:nth-child(1)
+        height 440px
         margin-top 0
         relative left auto bottom auto
       &:nth-child(2)
         display-inline-block()
+        height 440px
         relative left auto top auto
       &:last-child
+        height 440px
         margin-top 0
         relative right auto bottom auto
     +above(b4)
@@ -388,13 +420,13 @@ textarea
 
   +above(b2)
     &__box
+      height 840px
       position relative
-      height 646px
       center-block(100%)
       max-width 745px
       +above(b3)
-        max-width 100%
         height auto
+        max-width 100%
 
 .portfolio
   background-color #DFDFDF
@@ -410,7 +442,6 @@ textarea
       display-inline-block()
       margin 0.5em
       max-width 345px
-
       width 45%
   +above(b3)
     &__item
@@ -419,9 +450,9 @@ textarea
     &__item
       max-width 240px
   &__testimonials
-    margin 0 auto 0.5em
     background-color gris_dark
     color gris_light
+    margin 0 auto 0.5em
     h2
       margin 0
       padding 1em 0 0.5em
@@ -446,50 +477,63 @@ textarea
     +above(b2)
       background-color inherit
       color inherit
-      padding 0 1em
       max-width 757px
+      padding 0 1em
       h2
         padding 0
 
       &-item
         display-inline-block()
         margin 0 0.5em
-        width 46%
         margin 1.5em 0.5em
-        padding 0
         min-height 210px
+        padding 0
+        width 46%
         figure
           float left
-          margin 0
-          width 18%
           height 100%
+          margin 0
           margin 23px 0 0 8px
+          width 18%
         figcaption
           float right
-          width 72%
-          text-align left
           padding 0 1em
+          text-align left
+          width 72%
         &:last-child
           padding-bottom 0
     +above(b3)
       max-width 100%
       &-item
+        min-height 207px
         width 47%
-        min-height 196px
         figure
-          width 24%
           margin 20px
           padding inherit 1em
+          width 24%
         figcaption
-          width 62.5%
           margin 2px 22px 0 0
           padding 0
+          width 62.5%
     +above(b4)
       max-width 1070px
       &-item
         min-height 180px
         figure
           width 25%
+
+.price
+  absolute left 25% bottom 2%
+  color rojo
+  font-family: kaushanscript-regular-webfont
+  font-size 3em
+  sup
+    color negro
+    font-family lora-regular-webfont
+    font-size: 0.3em
+    font-weight: bold
+    margin-left 1em
+    text-transform uppercase
 
 .services
   overflow hidden
@@ -509,35 +553,35 @@ textarea
     padding 2em 0 1.5em
     &--icon
       center-block(90%)
-      max-width 320px
       margin-bottom 2.5em
+      max-width 320px
       padding 0.5em
       figure
         center-block(70%)
       p
-        margin 0 0 1.5em
         color gris_dark
+        margin 0 0 1.5em
       &:last-child
         margin-bottom 1em
       +above(b2)
         display-inline-block()
-        width 42%
         margin 4% 2%
+        width 42%
 
 
 
   +above(b3)
     &__information
       float right
-      width 45%
       margin-right 2%
       margin-top 1%
+      width 45%
       h2
         color blanco
         text-align left
       p
-        text-align left
         margin-left 0
+        text-align left
     &__image
       float left
       height 550px
@@ -549,20 +593,20 @@ textarea
 
 .title
   font-family kaushanscript-regular-webfont
-  margin 0.2em 0
   font-weight normal
+  margin 0.2em 0
   &--main
     font-size 2.6em
     line-height 1.2
   &--secundary
     font-family lora-regular-webfont
-    margin 1.2em 0 0
     font-size 1.2em
+    margin 1.2em 0 0
   &--testimonials
-    font-size 2em
     font-family lora-regular-webfont
-    margin 0.5em 0 0em
+    font-size 2em
     font-weight 500
+    margin 0.5em 0 0em
 
 .nav
   &__main
@@ -582,11 +626,11 @@ textarea
 
       &--bar
         background gris_dark
+        border-radius 5px
         display block
         height 4px
         transition 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55)
         width 75%
-        border-radius 5px
         & + .nav__main-toggle--bar
             margin-top 4px
       &--active
@@ -684,8 +728,8 @@ textarea
             display block
             font-size 1.3em
             margin 0.5em 0.1em
-            width auto
             padding 0.5em
+            width auto
             &:hover
               border-bottom 1px solid azul
 +above(b3)
