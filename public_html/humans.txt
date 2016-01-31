@@ -7,11 +7,20 @@
     Yan Arlex Vallejo - frontend -- @yavallejo
     Renzo Muñoz - Diseñador -- @Indigo2100
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
-    CSS3 (Stylus - Nib), HTML5 (Jade)
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3 (Stylus - Nib - Rupture), HTML5 (Jade)
+    Normalize.css
+    GulpJS
+        Autoprefixer-Stylus
+        Browser-Sync
+        Gulp-changued
+        Gulp-concat
+        Gulp-imagemin
+        Gulp-jade
+        Gulp-Sourcemaps
+        Gulp-Stylus
+        Nib
+        Rupture
+        Source-Map

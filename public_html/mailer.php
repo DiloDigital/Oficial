@@ -7,7 +7,7 @@
                 $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["correo"]), FILTER_SANITIZE_EMAIL);
         $telefono = trim($_POST["telefono"]);
-        $message = trim($_POST["message"]);
+        $message = trim($_POST["mensaje"]);
 
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -21,14 +21,15 @@
         // FIXME: Update this to your desired email address.
         $recipient = "hola@dilodigital.com";
 
+
         // Set the email subject.
         $subject = "Formulario de contacto por : $name";
 
         // Build the email content.
-        $email_content = "Nombre: $name\n";
-        $email_content .= "Correo Electronico: $email\n\n";
-        $email_content .= "Telefono:\n$message\n";
-        $email_content .= "Mensaje:\n$message\n";
+        $email_content = "Nombre:  $name\n";
+        $email_content .= "Correo Electrónico:  $email\n";
+        $email_content .= "Teléfono: $telefono\n";
+        $email_content .= "Mensaje: $message\n";
 
         // Build the email headers.
         $email_headers = "De: $name <$email>";
